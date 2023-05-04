@@ -1,0 +1,22 @@
+/* **********************************************
+ * Custom styling for Geomorphica journal backend
+ * cjw36 04 May 2023
+ * ********************************************** */
+
+
+/* *********************************************
+   Hide unwanted reviewer  recommendation option
+   ********************************************* */
+.pkp_helpers_half #recommendation option[value="4"] {
+  display: none;
+}
+
+
+/* ************************************************
+   Hide Review Type options when assigning reviewer.
+   Whatever is set as default in Workflow > Review
+   > Setup > Review Mode will be assigned.
+   ************************************************/
+#reviewerFormFooter .checkbox_and_radiobutton {
+  display: none;
+}
