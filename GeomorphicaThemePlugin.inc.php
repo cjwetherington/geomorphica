@@ -5,7 +5,7 @@
  *
  * @class GeomorphicaThemePlugin
  *
- * @brief Default theme
+ * @brief Default theme extension for Geomorphica journal
  */
 import('lib.pkp.classes.plugins.ThemePlugin');
 
