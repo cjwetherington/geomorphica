@@ -3,8 +3,7 @@
 /**
  * @file plugins/themes/geomorphica/index.php
  *
- * @ingroup plugins_themes_geomorphica
- * @brief Wrapper for geomorphica child  theme plugin.
+ * @brief Wrapper for the 'geomorphica' child theme plugin.
  *
  */
 

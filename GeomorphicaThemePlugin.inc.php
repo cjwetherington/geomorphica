@@ -4,7 +4,6 @@
  * @file plugins/themes/default/GeomorphicaThemePlugin.inc.php
  *
  * @class GeomorphicaThemePlugin
- * @ingroup plugins_themes_default
  *
  * @brief Default theme
  */
@@ -19,7 +18,7 @@ class GeomorphicaThemePlugin extends ThemePlugin {
 	 */
 	public function init() {
 		$this->setParent('defaultthemeplugin');
-                $this->addStyle('my-custom-style', 'styles/geomorphica-admin.css', array( 'contexts' => 'backend' ));
+                $this->addStyle('geomorphica-admin-style', 'styles/geomorphica-admin.css', array( 'contexts' => 'backend' ));
 	}
 
 	/**
@@ -35,7 +34,7 @@ class GeomorphicaThemePlugin extends ThemePlugin {
 	 * @return string
 	 */
 	function getDescription() {
-		return 'Child of Default theme providing custom backend styling for Geomorphica journal.';
+		return 'A child of the Default theme providing custom backend styling for the Geomorphica journal.';
 	}
 }
 
