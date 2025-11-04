@@ -7,7 +7,10 @@
  *
  * @brief Default theme extension for Geomorphica journal
  */
-import('lib.pkp.classes.plugins.ThemePlugin');
+
+namespace APP\plugins\themes\geomorphica;
+
+use PKP\plugins\ThemePlugin;
 
 class GeomorphicaThemePlugin extends ThemePlugin {
 	/**
@@ -18,7 +21,7 @@ class GeomorphicaThemePlugin extends ThemePlugin {
 	 */
 	public function init() {
 		$this->setParent('defaultthemeplugin');
-                $this->addStyle('geomorphica-admin-style', 'styles/geomorphica-admin.css', array( 'contexts' => 'backend' ));
+		$this->addStyle('geomorphica-admin-style', 'styles/geomorphica-admin.less', array( 'contexts' => 'backend' ));
 	}
 
 	/**
@@ -38,4 +41,6 @@ class GeomorphicaThemePlugin extends ThemePlugin {
 	}
 }
 
-?>
+if (!PKP_STRICT_MODE) {
+    class_alias('\APP\plugins\themes\geomorphica\GeomorphicaThemePlugin', '\GeomorphicaThemePlugin');
+}

@@ -9,6 +9,4 @@
 
 require_once('GeomorphicaThemePlugin.inc.php');
 
-return new GeomorphicaThemePlugin();
-
-?>
+return new APP\plugins\themes\geomorphica\GeomorphicaThemePlugin();
