@@ -7,17 +7,20 @@
 
 // ********************************************
 // Hide unwanted reviewer recommendation option
+// "Resubmit Elsewhere"
 // ********************************************
-.pkp_helpers_half #recommendation option[value="4"] {
+#reviewStep3Form.pkp_form fieldset#reviewStep3
+div.section.error div.pkp_helpers_half
+select#recommendation option[value="4"] {
   display: none;
 }
-
 
 // *************************************************
 // Hide Review Type options when assigning reviewer.
 // Whatever is set as default in Workflow > Review
 // > Setup > Review Mode will be assigned.
 // *************************************************
-#reviewerFormFooter .checkbox_and_radiobutton {
+#reviewerFormFooter.reviewerFormFooterContainer
+div.section ul.checkbox_and_radiobutton {
   display: none;
 }
