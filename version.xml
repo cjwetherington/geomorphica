@@ -4,7 +4,7 @@
 <!--
   * plugins/themes/geomorphica/version.xml
   *
-  * cjw36 - 04 Nov 2025
+  * cjw36 - 27 Oct 2026
   *
   * Plugin version information.
   -->
@@ -18,13 +18,13 @@
 
 	<!--
 		The current version. It should always include 4 numbers.
-	    Valid: 1.0.2.3, 0.1.4.0
+		Valid: 1.0.2.3, 0.1.4.0
 		Invalid: 1.0, v1.0.4, 1.0.0.0b
 	-->
-	<release>2.0.0.0</release>
+	<release>2.0.0.1</release>
 
 	<!-- The date of the latest version -->
-	<date>2025-11-04</date>
+	<date>2026-10-27</date>
 
 	<!-- This should always be 1 -->
 	<lazy-load>1</lazy-load>

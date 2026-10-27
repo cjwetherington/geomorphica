@@ -5,7 +5,7 @@
  *
  * @class GeomorphicaThemePlugin
  *
- * @brief Default theme extension for Geomorphica journal
+ * @brief Default theme extension for Geomorphica journal.
  */
 
 namespace APP\plugins\themes\geomorphica;
@@ -16,31 +16,31 @@ class GeomorphicaThemePlugin extends ThemePlugin {
 	/**
 	 * Initialize the theme's styles, scripts and hooks. This is only run for
 	 * the currently active theme.
-	 *
-	 * @return null
 	 */
-	public function init() {
+	public function init(): void {
+
 		$this->setParent('defaultthemeplugin');
 		$this->addStyle('geomorphica-admin-style', 'styles/geomorphica-admin.less', array( 'contexts' => 'backend' ));
+		$this->addScript('geomorphica', 'js/geomorphica.js');
 	}
 
 	/**
-	 * Get the display name of this plugin
-	 * @return string
+	 * Get the display name of this plugin.
 	 */
-	function getDisplayName() {
+	function getDisplayName(): string {
+
 		return 'Geomorphica';
 	}
 
 	/**
-	 * Get the description of this plugin
-	 * @return string
+	 * Get the description of this plugin.
 	 */
-	function getDescription() {
+	function getDescription(): string {
+
 		return 'A child of the Default theme providing custom backend styling for the Geomorphica journal.';
 	}
 }
 
 if (!PKP_STRICT_MODE) {
-    class_alias('\APP\plugins\themes\geomorphica\GeomorphicaThemePlugin', '\GeomorphicaThemePlugin');
+	class_alias('\APP\plugins\themes\geomorphica\GeomorphicaThemePlugin', '\GeomorphicaThemePlugin');
 }
